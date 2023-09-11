@@ -1,0 +1,19 @@
+name: Renovate
+
+on:
+  push:
+    branches:
+    - master
+
+jobs:
+  renovate:
+      name: Run renovate
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v3.6.0
+        - name: Self-hosted Renovate
+          uses: renovatebot/github-action@v39.0.5
+          with:
+            renovate-image: myproxyhub.domain.com/renovate/renovate
+            token: ${{ secrets.RENOVATE_TOKEN }}

@@ -1,0 +1,4 @@
+.version:
+  image: hexpm/elixir:1.15.4-erlang-25.3.2.4-alpine-3.18.2
+  script: "elixir -v"
+  stage: build
