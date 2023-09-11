@@ -5,5 +5,10 @@
     ],
     "enabledManagers": [
         "gitlabci"
+    ],
+    "onboarding": false,
+    "platform": "github",
+    "repositories": [
+        "Efesto/renovate_gitlab_wildcard_repro"
     ]
 }
